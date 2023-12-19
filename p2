@@ -1,0 +1,4 @@
+creating and managing 
+1) (a) create a new branch name 'feature-branch '. switch to the master branch. merge the feature branch into master 
+   (b) write the commands to stash ur changes , switch branches , then apply the stashed changes
+   
