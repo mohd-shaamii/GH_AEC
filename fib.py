@@ -1,15 +1,10 @@
-# Function for nth fibonacci 
-
-FibArray = [0, 1]
-
 def fibonacci(n):
+    fib_series = [0, 1]
+    while len(fib_series) < n:
+        fib_series.append(fib_series[-1] + fib_series[-2])
+    return fib_series[:n]
 
-	if n < 0:
-		print("Incorrect input")
-	elif n < len(FibArray):
-		return FibArray[n]
-	else:	 
-		FibArray.append(fibonacci(n - 1) + fibonacci(n - 2))
-		return FibArray[n]
-
-print(fibonacci(9))
+# Example: Print the first 10 numbers in the Fibonacci series
+n = 10
+result = fibonacci(n)
+print(f"The first {n} numbers in the Fibonacci series are: {result}")
