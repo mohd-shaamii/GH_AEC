@@ -1,0 +1,175 @@
+program1 
+
+git clone url
+cd filename
+git add a.txt
+git pull
+git commit -m "1"
+git push origin main
+-------------------------------------------
+program 2
+git clone https://github.com/RahulKottary11/lab10.git   
+cd lab10
+git add a.txt
+git commit -m "first commit"
+git push origin main
+git checkout -b source_branch
+git push origin source_branch
+git checkout main
+-------------------------------
+program 3
+git clone
+cd 3
+git branch -c feature-branch
+git push origin feature-branch
+git check origin feature-branch
+git fetch
+ git rebase origin feature-branch
+ git pull origin main
+ git push origin main
+git checkout main
+git merge feature-branch -m "Merge feature branch into main"
+--------------------------------------------
+program 4
+
+git clone url
+cd filename
+git add a.txt
+git pull
+git commit -m "1"
+git push origin main
+git add b.txt
+git pull
+git commit -m "2"
+git push origin main
+git tag v1.0
+git tag
+git push origin v1.0
+git add c.txt
+git pull
+git commit -m "3"
+git push origin main0
+git checkout -b version v1.0
+git push origin version
+
+------------------------------------------
+program 5
+
+git clone <url>
+git add file_a.txt
+git commit -m "Initial commit on main branch"
+git push origin main
+Create the Source Branch and commit two or more files in it
+git checkout -b <source_branch>
+git push origin source_branch
+git checkout main
+git cherry-pick source_branch~<range>..source_branch
+git log
+git push origin main
+----------------------------------------------
+program 6
+
+Create a new repository:
+repo_name: lab_06
+
+Create a folder name: lab_06
+
+Clone a Repository:
+
+
+git clone <repository_url>
+
+
+cd <repository_folder>
+
+Step 3: Create and Add Files
+echo > file1.txt
+git add file1.txt
+
+Step 4: Make Commits
+git commit -m "first commit"
+
+Step 5: Create and Add Files
+echo > file2.txt
+git add file2.txt
+
+Step 6: Make Commits
+git commit -m "second commit"
+
+Step 7: Create and Add Files
+echo  > file3.txt
+git add file3.txt
+
+Step 8: Make Commits
+git commit -m "third commit"
+
+Step 9: Create and Add Files
+echo  > file4.txt
+git add file4.txt
+
+Step 10: Make Commits
+git commit -m "fourth commit"
+
+Step 11: Create and Add Files
+echo  > file5.txt
+git add file5.txt
+
+Step 12: Make Commits
+git commit -m "fifth commit"
+Make additional commits as needed.
+
+
+
+a) Given a commit ID, how would you use Git to view the details of that specific commit, including the author, date, and commit message?
+
+View Commit Details:
+
+Step 1: Get Commit ID
+git log
+Example:
+commit fa55d341b558a605923e8bf2efb487fac85fce8c
+Author: Sudheesh Patwardhan <sudheesh.is21@gmail.com>
+Date:   Wed Jan 24 11:19:46 2024 +0530
+
+commit on master branch
+
+Step 2: View Commit Details
+git show <commit_id>
+//Replace <commit_id> with the actual commit ID.
+
+
+
+b) Write the command to list all commits made by the author "JohnDoe" between "2023-01-01" and "2023-12-31."
+
+List Commits by Author and Date Range:
+
+Step 1: Get author name from 
+git log
+
+Step 2: List Commits by Author and Date Range
+git log --author="JohnDoe" --since="2024-01-01" --until="2024-01-31"
+//Replace "JohnDoe" with the author's name.
+
+git log --author="JohnDoe"
+//This command retrieves the commit history for the author "JohnDoe" without specifying a date range. It will display all commits authored by "JohnDoe" in the repository.
+
+
+
+c) Write the command to display the last five commits in the repository's history.
+
+Display Last Five Commits:
+
+Step 1: Display Last Five Commits
+git log -n 5
+
+
+
+d) Write the command to undo the changes introduced by the commit with the ID "abc123".
+
+Undo Changes with Git Revert:
+
+Step 1: Get Commit ID to Revert
+git log
+Step 2: Revert Changes
+git revert <commit_id>
+// Replace the <commit_id> with original_id
